@@ -1,0 +1,6 @@
+*.mp3
+.idea/
+sample/
+venv/
+__pycache__/
+.vscode/
