@@ -1,3 +1,0 @@
-1)      Shanbeh     22-5-1401       توضیحات کلی - رکوئست و ریسپانس - فرانت اند و بک اند - معماری ام وی تی - نصب جنگو - django-admin startproject config . - py manage.py runserver
-2)      4Shanbeh    26-5-1401
-
