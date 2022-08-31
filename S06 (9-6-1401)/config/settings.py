@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'car',
     'samand',
     'weblog',
+    'notes',
 ]
 
 MIDDLEWARE = [
