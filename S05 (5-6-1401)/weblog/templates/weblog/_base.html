@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'weblog/_base.css' %}">
+    <title>{% block title %}{% endblock title %}</title>
+    {% block meta %}
+    {% endblock meta %}
+</head>
+<body>
+    <h1>Welcome To our site :)</h1>
+    <p>Welcome to our site. We are sharing new information with you.</p>
+    <p>My name is 
+        {% block name %}
+        {% endblock name %}
+    </p>
+    <p>Hope to see you again</p>
+    {% block main %}
+    {% endblock main %}
+    <a href="https://www.google.com">Google</a>
+    <a href="https://www.Amazon.com">Amazon</a>
+    <a href="https://www.Apple.com">Apple</a>
+</body>
+</html>
