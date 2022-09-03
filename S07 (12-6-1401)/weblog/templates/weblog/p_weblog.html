@@ -1,0 +1,82 @@
+{% extends 'weblog/_base.html' %}
+{% load static %}
+
+
+{% block title %}
+وبلاگ پانیذ قاطعی {{ ab }}
+{% endblock title %}
+{% block meta %}
+<link rel="stylesheet" href="{% static 'weblog/css/paniz.css' %}">
+{% endblock meta %}
+{% block name %}
+Paniz Ghatei
+{% endblock name %}
+
+{% block main %}
+<div id="header-page">
+    <ul id="header-page">
+        <a href="index2.html" class="header-page">Menu</a>
+        <a href="#" class="header-page">Restaurants</a>
+        <a href="#" class="header-page">Offers</a>
+        <a class="header-page">
+            <div class="dropdown">
+                <span>More▽</span>
+                <div class="dropdown-content">
+                    <p>درباره رستوران من</p>
+                    <p>غذاهای دریایی</p>
+                    <p>غذاهای ایتالیایی</p>
+                    <p>غذاهای چینی</p>
+                    <p>تماس با ما</p>
+                </div>
+            </div>
+        </a>
+    </ul>
+</div>
+<div id="centered-header-picture"><img id="top-image" src="/images/test.png" alt="burger picture"> </div>
+
+<div id="our-menu">Our Menu</div>
+
+<div class="main-body">
+    <div class="picture-and-text">
+        <img src="images/1.jpg" alt="picture 1">
+        <span>Whopper</span>
+    </div>
+    <div class="picture-and-text">
+        <img src="images/2.jpg" alt="picture 2">
+        <span>Beef</span>
+    </div>        
+    <div class="picture-and-text">
+        <img src="images/3.jpg" alt="picture 2">
+        <span>Beef</span>
+    </div>        
+    <div class="picture-and-text">
+        <img src="images/4.jpg" alt="picture 2">
+        <span>Beef</span>
+    </div>        
+    <div class="picture-and-text">
+        <img src="images/5.jpg" alt="picture 2">
+        <span>Beef</span>
+    </div>        
+    <div class="picture-and-text">
+        <img src="images/6.jpg" alt="picture 2">
+        <span>Beef</span>
+    </div>        
+    <div class="picture-and-text">
+        <img src="images/7.jpg" alt="picture 2">
+        <span>Beef</span>
+    </div>        
+    <div class="picture-and-text">
+        <img src="images/8.jpg" alt="picture 2">
+        <span>Beef</span>
+    </div>        
+    <div class="picture-and-text">
+        <img src="images/9.jpg" alt="picture 2">
+        <span>Beef</span>
+    </div>        
+    <div class="picture-and-text">
+        <img src="images/10.jpg" alt="picture 2">
+        <span>Beef</span>
+    </div>        
+
+</div>
+{% endblock main %}

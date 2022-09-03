@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table style="border: 1px red solid">
+        <tr>
+            <th>عنوان</th><th>جزییات</th><th>جزییات کامل</th>
+            <th>نویسنده</th><th>سن</th><th>تاریخ</th>
+        </tr>        
+        {% for note in notes %}
+        <tr>
+            <td style="border: 1px red solid">{{ note.title }}</td>
+            <td style="border: 1px red solid">{{ note.detailed_text }}</td>
+            <td style="border: 1px red solid">{{ note.full_description }}</td>
+            <td style="border: 1px red solid">{{ note.author }}</td>
+            <td style="border: 1px red solid">{{ note.age_author }}</td>
+            <td style="border: 1px red solid">{{ note.date_written }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
