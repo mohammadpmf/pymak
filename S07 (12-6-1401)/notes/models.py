@@ -18,3 +18,6 @@ class Note2(models.Model):
     def __str__(self):
         return f"{self.author}: {self.age_author}"
 
+class Shoe(models.Model):
+    size = models.IntegerField()
+    color = models.CharField(max_length=40)

@@ -1,0 +1,43 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'commands/style.css' %}">
+    <title>Django Commands</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>دستور اصلی</th>
+            <th>نمونه دستور</th>
+            <th>توضیحات</th>
+        </tr>
+        <tr>
+            <td>django-admin startproject setting_name</td>
+            <td>django-admin startproject config .</td>
+        </tr>
+        <tr>
+            <td rowspan="4">python3 manage.py command</td>
+            <td>python3 manage.py runserver</td>
+        </tr>
+        <tr>
+            <td>python3 manage.py migrate</td>
+        </tr>
+        <tr>
+            <td>python3 manage.py createsuperuser</td>
+        </tr>
+        <tr>
+            <td>python3 manage.py makemigrations</td>
+        </tr>
+        <tr>
+            <td>python3 manage.py startapp appname</td>
+            <td>python3 manage.py startapp shop</td>
+        </tr>
+    </table>
+    
+</body>
+</html>

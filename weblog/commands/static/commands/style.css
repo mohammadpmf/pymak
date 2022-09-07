@@ -1,0 +1,8 @@
+table{
+    background-color: lightblue;
+    width: 100%;
+}
+tr, td, th{
+    background-color: aqua;
+    font-size: 1.2em;
+}
