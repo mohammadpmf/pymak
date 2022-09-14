@@ -1,5 +1,4 @@
 from django.db import models
-# from django.contrib.auth.
 
 class Post(models.Model):
     CHOICES = (
@@ -8,10 +7,10 @@ class Post(models.Model):
     )
     title = models.CharField(max_length=50)
     text = models.TextField()
-    date_created = models.DateTimeField(auto_now_add=True)
-    date_modified = models.DateTimeField(auto_now=True)
+    datetime_created = models.DateTimeField(auto_now_add=True)
+    datetime_modified = models.DateTimeField(auto_now=True)
     status = models.CharField(max_length=3, choices=CHOICES)
-    # author = models.ForeignKey()
+    author = models.ForeignKey(to='auth.User', on_delete=models.CASCADE)
     
     def __str__(self):
         return f"{self.title}"
